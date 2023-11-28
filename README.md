@@ -110,9 +110,9 @@ to test the model and generate responses.
 
 ## Evaluation:
 
-* Fine-tuning LLMs pose a unique challenge because their performance isn’t just a matter of accuracy; it’s about the value of the generated text. Traditional metrics such as loss or validation scores aren’t particularly insightful in these cases. More insightful metrics like perplexity and accuracy also fall short of providing a full performance picture, given that high confidence and correctness in predicting the next word don’t guarantee contextually appropriate or high-quality results.*
+*Fine-tuning LLMs pose a unique challenge because their performance isn’t just a matter of accuracy; it’s about the value of the generated text. Traditional metrics such as loss or validation scores aren’t particularly insightful in these cases. More insightful metrics like perplexity and accuracy also fall short of providing a full performance picture, given that high confidence and correctness in predicting the next word don’t guarantee contextually appropriate or high-quality results.*
 
-BLUE and ROUGE Scire are orignally meant for translation tasks but we can implement these to get an idea of model performance.
+BLUE and ROUGE Scire are orignally meant for translation tasks but we can implement these to get an idea of model performance. The best metric is still human evaluation but for the sake f automation we need to settle on some metric that we can say with some what confidence 
 
 #### Methodology
 
