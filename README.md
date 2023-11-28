@@ -56,5 +56,28 @@ For details.
 These scrappers take page links and scrape data according to set parameters. For this demo I scrapped 200 Facebook posts and 
 783 Instagram posts. These scrappers ouptut JSON format files that contain many fields like url, likes etc but I used only the text for our use case.
 
+#### Combine all scraped data and convert into a 🤗 Dataset:
+
+🤗 Datasets is a library for easily accessing and sharing datasets for Audio, Computer Vision, and Natural Language Processing (NLP) tasks and makes dataprocessing very easir for our fine-tuning taks and is free to host as bog of a dataset you need for free.
+
+Run the 
+  dataset.py
+file or see
+ dataset.ipynb
+Notebook to read all the data from .txt files and JSON files and convert these into a 🤗 dataset.
+
+ * We obtained a total of **976** entries in our dataset and we split the data into a **90-10** Train and Test split.
+ So we have **878** Training examples and **98** test examples.
+
+ * We use **.push_to_hub('316usman/tapal_dataset_demo')** to push this data to the huggingface hub.
+**Note this is a private dataset**
+
+
+
+
+
+
+
+
 
 
