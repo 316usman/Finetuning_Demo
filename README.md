@@ -118,4 +118,10 @@ BLUE and ROUGE Scire are orignally meant for translation tasks but we can implem
 
 In this demo, we will employ a methodology novel. The focus of our evaluation lies in assessing the LLM's ability to generate coherent and contextually relevant text when presented with text segments split into half their original token length. To execute this methodology, we will begin by preparing a evaluation dataset by using the test part of our orignal tapal dataset. Following consistent tokenization with the method used during the model's training, each text row in the evaluation dataset will be split into segments, each containing half of the original token length. These segments will serve as input for the fine-tuned LLM during the evaluation setup, where the model will be tasked with generating the next words or tokens for each segment. 
 
-To measure performance, we will utilize established metrics such as perplexity, BLEU score, and human assessment. Control variables, including a fixed random seed for reproducibility and the selection of a representative subset of the evaluation dataset, will be implemented. The evaluation process will be iterative, involving multiple runs with different subsets and potential fine-tuning iterations based on the results. The study will conclude with a summary of findings, potential areas for improvement, and an overall assessment of the fine-tuned LLM using the proposed half-token-length text splitting approach.
+To measure performance, we will utilize established metrics rouge score, and human assessment. The evaluation process will be iterative, involving multiple runs with different subsets and potential fine-tuning iterations based on the results. The study will conclude with a summary of findings, potential areas for improvement, and an overall assessment of the fine-tuned LLM using the proposed half-token-length text splitting approach. 
+
+The evaluation steps can be exectuted in the 
+  evaluate.py
+file or the
+  evaluate.ipynb
+
